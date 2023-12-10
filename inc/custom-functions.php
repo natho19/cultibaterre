@@ -8,5 +8,9 @@ function cultibaterre_setup() {
 }
 add_action('after_setup_theme', 'cultibaterre_setup');
 
-// Image location
+// Images location
 define('CULTIBATERRE_IMG_URL', get_template_directory_uri() . '/assets/images/', false);
+define('CULTIBATERRE_FAVICON_URL', get_template_directory_uri() . '/assets/images/resources/sec-title-icon1.png', false);
+
+// Disable Gutenberg
+add_filter('use_block_editor_for_post', '__return_false');

@@ -1,3 +1,28 @@
+        <!--Cta One -->
+        <section class="cta-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="cta-one__wrapper">
+                            <div class="cta-one__left">
+                                <div class="cta-one__left-icon">
+                                    <span class="icon-farm"></span>
+                                </div>
+                                <div class="cta-one__left-title">
+                                    <h2>Nous offrons le meilleur dans notre domaine</h2>
+                                </div>
+                            </div>
+                            <div class="cta-one__right">
+                                <div class="cta-one__right-btn">
+                                    <a href="#" class="thm-btn">Nous contacter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
         <!--Start Footer One-->
         <footer class="footer-one">
             <div class="footer-one__top">
@@ -10,7 +35,7 @@
                                     <div class="col-xl-5 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
                                         <div class="footer-widget__column footer-widget__about">
                                             <div class="footer-widget__about-logo">
-                                                <a href="index.html"><img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-3.png'; ?>" alt="Logo"></a>
+                                                <a href="http://localhost/cultibaterre/"><img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-3.png'; ?>" alt="Logo"></a>
                                             </div>
                                             <p class="footer-widget__about-text">Lorem ipsum dolor sit amet consect etur adi pisicing elit sed.</p>
                                             <div class="footer-widget__about-contact-box">
@@ -119,7 +144,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-3.png'; ?>" alt="Logo" /></a>
+                <a href="http://localhost/cultibaterre/" aria-label="logo image"><img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-3.png'; ?>" alt="Logo" /></a>
             </div>
             <!-- /.logo-box -->
 

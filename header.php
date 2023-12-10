@@ -71,7 +71,7 @@
                         <div class="main-header--one__bottom-inner">
                             <div class="main-header--one__bottom-middel">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="http://localhost/cultibaterre/">
                                         <img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-1.png'; ?>" alt="Logo" class="light-logo" />
                                     </a>
                                 </div>
@@ -82,14 +82,14 @@
                                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                     <div class="stricky-one-logo">
                                         <div class="logo">
-                                            <a href="index.html">
+                                            <a href="http://localhost/cultibaterre/">
                                                 <img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-1.png'; ?>" class="dark-logo" alt="Logo" />
                                             </a>
                                         </div>
                                     </div>
                                     <div class="main-header--one__bottom-left">
                                         <ul class="main-menu__list">
-                                            <li><a href="index.html">Accueil</a></li>
+                                            <li><a href="http://localhost/cultibaterre/">Accueil</a></li>
                                             <li><a href="about.html">A propos</a></li>
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="blog.html">Blog</a></li>
