@@ -2533,6 +2533,7 @@ button {
 .about-one__content-list li .text p {
     color: var(--agriox-primary, #334b35);
     font-weight: 500;
+    line-height: 28px;
     margin-bottom: 0;
 }
 

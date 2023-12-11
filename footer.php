@@ -37,21 +37,20 @@
                                             <div class="footer-widget__about-logo">
                                                 <a href="http://localhost/cultibaterre/"><img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-3.png'; ?>" alt="Logo"></a>
                                             </div>
-                                            <p class="footer-widget__about-text">Lorem ipsum dolor sit amet consect etur adi pisicing elit sed.</p>
+                                            <p class="footer-widget__about-text">Grossiste de produits agricoles</p>
                                             <div class="footer-widget__about-contact-box">
                                                 <p class="phone">
-                                                    <a href="tel:123456789">
-                                                        <i class="fas fa-phone-square-alt"></i> +92 666 888 0000
+                                                    <a href="tel:+22891422196">
+                                                        <i class="fas fa-phone-square-alt"></i> 91 42 21 96
                                                     <a>
                                                 </p>
                                                 <p>
-                                                    <a href="mailto:needhelp@company.com">
-                                                        <i class="fa fa-envelope"></i> needhelp@company.com
+                                                    <a href="mailto:contact@cultibaterre.com">
+                                                        <i class="fa fa-envelope"></i> contact@cultibaterre.com
                                                     </a>
                                                 </p>
                                                 <p class="text">
-                                                    <i class="fas fa-map-marker-alt"></i> 666 road, broklyn
-                                                    street new york
+                                                    <i class="fas fa-map-marker-alt"></i> S/C 10 BP 10299 Lomé, Agou
                                                 </p>
                                             </div>
                                         </div>
@@ -121,7 +120,7 @@
                                     <ul>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>

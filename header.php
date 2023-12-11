@@ -39,7 +39,7 @@
                                 <ul>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>
@@ -51,13 +51,13 @@
                                         <i class="fa fa-envelope"></i>
                                     </div>
                                     <div class="text">
-                                        <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
+                                        <p><a href="mailto:contact@cultibaterre.com">contact@cultibaterre.com</a></p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="icon"><i class="fa fa-clock"></i></div>
                                     <div class="text">
-                                        <p>Mon - Sat 8:00 - 6:30, Sunday - CLOSED</p>
+                                        <p>Lun - Sam 24h/24, Dim - 06:00 à 13:00</p>
                                     </div>
                                 </li>
                             </ul>
@@ -110,8 +110,8 @@
                                         <span class="icon-phone-call-2"></span>
                                     </div>
                                     <div class="text">
-                                        <p>Call Anytime</p>
-                                        <a href="tel:123456789">666 888 0000</a>
+                                        <p>Centre d'appel</p>
+                                        <a href="tel:+22891422196">91 42 21 96</a>
                                     </div>
                                 </div>
                             </div>
