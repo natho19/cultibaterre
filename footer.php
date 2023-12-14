@@ -90,11 +90,11 @@
                                         <div class="footer-widget__column footer-widget__explore">
                                             <h2 class="footer-widget__title">Liens utiles</h2>
                                             <ul class="footer-widget__explore-list">
-                                                <li class="footer-widget__explore-list-item"><a href="about.html">A Propos</a></li>
+                                                <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/a-propos/">A Propos</a></li>
                                                 <li class="footer-widget__explore-list-item"><a href="services.html">Nos Services</a></li>
                                                 <li class="footer-widget__explore-list-item"><a href="projects.html">Nos Projets</a></li>
                                                 <li class="footer-widget__explore-list-item"><a href="blog.html">Blog</a></li></li>
-                                                <li class="footer-widget__explore-list-item"><a href="about.html">Contact</a></li>
+                                                <li class="footer-widget__explore-list-item"><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </div>
                                     </div>
