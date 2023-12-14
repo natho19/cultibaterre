@@ -26,5 +26,6 @@ function cultibaterre_load_scripts() {
     wp_enqueue_script('parallax', get_template_directory_uri() . '/assets/vendors/parallax/parallax.min.js', ['jquery'], null, true);
     wp_enqueue_script('tilt', get_template_directory_uri() . '/assets/vendors/tilt.js/tilt.jquery.js', ['jquery'], null, true);
     wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.js', ['jquery'], null, true);
+    wp_enqueue_script('acf-map', get_template_directory_uri() . '/assets/js/acf-map.min.js', ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', 'cultibaterre_load_scripts');

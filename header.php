@@ -93,7 +93,7 @@
                                             <li><a href="http://localhost/cultibaterre/a-propos/">A propos</a></li>
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="http://localhost/cultibaterre/contact/">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>
