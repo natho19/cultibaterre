@@ -93,7 +93,7 @@
                                                 <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/a-propos/">A Propos</a></li>
                                                 <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/services">Nos Services</a></li>
                                                 <li class="footer-widget__explore-list-item"><a href="projects.html">Nos Projets</a></li>
-                                                <li class="footer-widget__explore-list-item"><a href="blog.html">Blog</a></li></li>
+                                                <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/blog/">Blog</a></li></li>
                                                 <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/contact/">Contact</a></li>
                                             </ul>
                                         </div>

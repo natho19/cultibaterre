@@ -4,7 +4,7 @@
         <div class="page-header__inner text-center clearfix">
             <?php if (is_page()) : ?>
                 <ul class="thm-breadcrumb">
-                    <li><a href="<?= get_home_url(); ?>">Accueil</a></li>
+                    <li><a href="<?= esc_url(get_home_url()); ?>">Accueil</a></li>
                     <li><?php the_title(); ?></li>
                 </ul>
             <?php endif; ?>

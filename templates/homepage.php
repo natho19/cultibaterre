@@ -162,12 +162,11 @@
                 data-wow-duration="1000ms">
                 <div class="services-one__single">
                     <div class="services-one__single-img">
-                        <div class="services-one__single-img-inner">
-                            <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                        </div>
-                        <div class="services-one__single-img-icon">
-                            <span class="icon-agriculture"></span>
-                        </div>
+                        <a href="#">
+                            <div class="services-one__single-img-inner">
+                                <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
+                            </div>
+                        </a>
                     </div>
                     <div class="services-one__single-content text-center">
                         <h3><a href="service-details.html">Produits biologiques</a></h3>
@@ -186,9 +185,6 @@
                         <div class="services-one__single-img-inner">
                             <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
                         </div>
-                        <div class="services-one__single-img-icon">
-                            <span class="icon-harvest"></span>
-                        </div>
                     </div>
                     <div class="services-one__single-content text-center">
                         <h3><a href="service-details.html">Fruits frais</a></h3>
@@ -206,9 +202,6 @@
                     <div class="services-one__single-img">
                         <div class="services-one__single-img-inner">
                             <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                        </div>
-                        <div class="services-one__single-img-icon">
-                            <span class="icon-growth"></span>
                         </div>
                     </div>
                     <div class="services-one__single-content text-center">
@@ -300,7 +293,7 @@
             </div>
 
             <div class="about-three__content-box-btn text-center">
-                <a href="blog.html" class="thm-btn">Tous les articles</a>
+                <a href="http://localhost/cultibaterre/blog/" class="thm-btn">Tous les articles</a>
             </div>
             <!--End Single Blog One-->
         </div>
