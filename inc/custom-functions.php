@@ -5,6 +5,7 @@ add_filter('show_admin_bar', '__return_false');
 // Theme support
 function cultibaterre_setup() {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'cultibaterre_setup');
 
@@ -14,3 +15,18 @@ define('CULTIBATERRE_FAVICON_URL', get_template_directory_uri() . '/assets/image
 
 // Disable Gutenberg
 add_filter('use_block_editor_for_post', '__return_false');
+
+// Add custom image format 900x600
+add_image_size('cultibaterre900x600', 900, 600, true);
+
+// Excerpt length
+function cultibaterre_excerpt_length($length) {
+    return 20;
+}
+add_filter('excerpt_length', 'cultibaterre_excerpt_length', 100);
+
+// Replace excerpt ellipsis
+function cultibaterre_excerpt_more($more) {
+    return '...';
+}
+add_filter('excerpt_more', 'cultibaterre_excerpt_more');

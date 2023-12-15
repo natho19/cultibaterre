@@ -221,7 +221,7 @@
             <!--End Single Services One-->
 
             <div class="about-three__content-box-btn text-center">
-                <a href="services.html" class="thm-btn">Tous les services</a>
+                <a href="http://localhost/cultibaterre/services" class="thm-btn">Tous les services</a>
             </div>
         </div>
         

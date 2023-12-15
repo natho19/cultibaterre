@@ -3106,7 +3106,7 @@ button {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 523px;
+    height: 367px;
     background: #f6f4ec;
     z-index: -1;
     background-image: url(../images/backgrounds/service-top-bg-1-1.png);
@@ -7120,19 +7120,22 @@ button {
 
 .services-details__sidebar-single-btn .thm-btn {
     font-size: 16px;
-    padding: 13px 50px 28px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-details__sidebar-single-btn .thm-btn span::before {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
-    top: 13px;
+    /* top: 13px; */
     color: var(--agriox-primary, #334b35);
     font-size: 40px;
     padding-right: 25px;
     -webkit-transition: all 600ms ease;
     transition: all 600ms ease;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .services-details__sidebar-single-btn .thm-btn:hover span::before {
@@ -8907,6 +8910,11 @@ Sidebar
     display: block;
 }
 
+.projects-details__pagination ul li:has(.next) {
+    margin-left: auto;
+}
+
+
 .projects-details__pagination ul li .next p {
     color: var(--agriox-primary, #334b35);
     font-weight: 700;
@@ -9307,7 +9315,7 @@ Sidebar
     }
     .services-details__sidebar-single-btn .thm-btn {
         font-size: 14px;
-        padding: 10px 26px 25px;
+        padding: 20px 25px;
     }
     /**Contact Page Contact Info**/
     .contact-page__contact-info-wrapper {
@@ -10007,7 +10015,7 @@ Sidebar
         max-width: none;
     }
     .services-details__sidebar-single-btn .thm-btn {
-        padding: 10px 25px 25px;
+        padding: 15px 25px;
         font-size: 14px;
     }
     .services-details__content-title {

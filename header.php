@@ -91,7 +91,7 @@
                                         <ul class="main-menu__list">
                                             <li><a href="http://localhost/cultibaterre/">Accueil</a></li>
                                             <li><a href="http://localhost/cultibaterre/a-propos/">A propos</a></li>
-                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="http://localhost/cultibaterre/services">Services</a></li>
                                             <li><a href="blog.html">Blog</a></li>
                                             <li><a href="http://localhost/cultibaterre/contact/">Contact</a></li>
                                         </ul>
