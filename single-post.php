@@ -26,98 +26,26 @@
                     </div>
                     <!--End Single Blog One-->
                 </div>
-
-                <!--Projects One -->
-                <div class="other-posts">
-                    <div class="sec-title text-center">
-                        <div class="icon">
-                            <img src="assets/images/resources/sec-title-icon1.png" alt="" />
-                        </div>
-                        <span class="sec-title__tagline">Autres Articles</span>
-                        <h2 class="sec-title__title">Lire d'autres articles</h2>
-                    </div>
-                    <div class="row">
-                        <!--Start Single Blog One-->
-                        <div class="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="blog-one__single">
-                                <div class="blog-one__single-img">
-                                    <img src="assets/images/backgrounds/900x600.png" alt="" />
-                                    <div class="date-box">
-                                        <span>30 July, 2021</span>
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <a href="single-post.html"><span class="icon-plus"></span></a>
-                                    </div>
-                                </div>
-    
-                                <div class="blog-one__single-content">
-                                    <h2><a href="single-post.html">Why Eco and Walking or Agriculture for the Environment?</a></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Single Blog One-->
-    
-                        <!--Start Single Blog One-->
-                        <div class="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="blog-one__single">
-                                <div class="blog-one__single-img">
-                                    <img src="assets/images/backgrounds/900x600.png" alt="" />
-                                    <div class="date-box">
-                                        <span>30 July, 2021</span>
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <a href="single-post.html"><span class="icon-plus"></span></a>
-                                    </div>
-                                </div>
-    
-                                <div class="blog-one__single-content">
-                                    <h2><a href="single-post.html">Bring to the table win-win survival strategies to ensure</a></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Single Blog One-->
-                    </div>
-                </div>
             </div>
             <!--End News Sidebar Laft-->
 
             <!--Start News Sidebar Sidebar-->
             <div class="col-xl-4 col-lg-5">
                 <div class="sidebar">
-                    <div class="sidebar__single sidebar__latest-posts wow fadeInUp animated animated animated"
-                        data-wow-delay="0.2s" data-wow-duration="1200m">
-                        <div class="title">
-                            <h2>Derniers articles</h2>
+                    <!--Start Services Details Sidebar Single-->
+                    <div class="services-details__sidebar-single">
+                        <div class="services-details__sidebar-single-contact-box text-center wow fadeInUp animated animated animated" data-wow-delay="0.3s" data-wow-duration="1200m">
+                            <div class="icon">
+                                <span class="icon-phone-call-2"></span>
+                            </div>
+                            <div class="title">
+                                <h2>L'agriculture autrement</h2>
+                            </div>
+                            <p class="phone"><a href="tel:123456789">666 888 0000</a></p>
+                            <p>Contactez-nous à tout moment</p>
                         </div>
-                        <ul class="sidebar__latest-posts-list">
-                            <li class="sidebar__latest-posts-list-item">
-                                <div class="img-box">
-                                    <img src="assets/images/backgrounds/200x200.png" alt="" />
-                                </div>
-                                <div class="title">
-                                    <h4><a href="#">Agriculture Miracle you Dont Know About</a></h4>
-                                </div>
-                            </li>
-
-                            <li class="sidebar__latest-posts-list-item">
-                                <div class="img-box">
-                                    <img src="assets/images/backgrounds/200x200.png" alt="" />
-                                </div>
-                                <div class="title">
-                                    <h4><a href="#">Agriculture Miracle you Dont Know About</a></h4>
-                                </div>
-                            </li>
-
-                            <li class="sidebar__latest-posts-list-item">
-                                <div class="img-box">
-                                    <img src="assets/images/backgrounds/200x200.png" alt="" />
-                                </div>
-                                <div class="title">
-                                    <h4><a href="#">Agriculture Miracle you Dont Know About</a></h4>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
+                    <!--End Services Details Sidebar Single-->
                 </div>
             </div>
             <!--End News Details Sidebar-->
