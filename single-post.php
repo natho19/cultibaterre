@@ -25,17 +25,6 @@
                         </div>
                     </div>
                     <!--End Single Blog One-->
-
-                    <div class="tag-social-link">
-                        <div class="tag-social-link__social-links">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
                 <!--Projects One -->
