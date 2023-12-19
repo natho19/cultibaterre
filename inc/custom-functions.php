@@ -30,3 +30,12 @@ function cultibaterre_excerpt_more($more) {
     return '...';
 }
 add_filter('excerpt_more', 'cultibaterre_excerpt_more');
+
+// Filter search results for posts and services only
+function cultibaterre_search_filter($query) {
+	if ($query->is_search) {
+		$query->set('post_type', ['post', 'service']);
+	}
+	return $query;
+}
+add_filter('pre_get_posts', 'cultibaterre_search_filter');

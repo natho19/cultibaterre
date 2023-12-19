@@ -181,9 +181,9 @@
         <div class="search-popup__overlay search-toggler"></div>
         <!-- /.search-popup__overlay -->
         <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Rechercher..." />
+            <form role="search" method="get" action="<?= home_url(); ?>">
+                <label for="search" class="sr-only">Rechercher...</label><!-- /.sr-only -->
+                <input type="search" name="s" id="search" placeholder="Rechercher..." />
                 <button type="submit" aria-label="search submit" class="thm-btn2">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
