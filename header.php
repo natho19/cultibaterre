@@ -33,7 +33,7 @@
                     <div class="auto-container">
                         <div class="main-header--one__top-left">
                             <div class="text">
-                                <p>Le Cultibaterre, Bioéquitable !</p>
+                                <p>Grossiste de produits agricoles</p>
                             </div>
                             <div class="social-link clearfix">
                                 <ul>

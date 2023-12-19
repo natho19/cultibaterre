@@ -57,36 +57,9 @@
                                     </div>
                                     <!--End Footer Widget Column-->
 
+                                    
                                     <!--Start Footer Widget Column-->
-                                    <div class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
-                                        <div class="footer-widget__column footer-widget__news">
-                                            <h2 class="footer-widget__title">Derniers articles</h2>
-                                            <ul class="footer-widget__news-list">
-                                                <li class="footer-widget__news-list-item">
-                                                    <div class="footer-widget__news-list-item-img">
-                                                        <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/200x200.png'; ?>" alt="Post" />
-                                                    </div>
-                                                    <div class="footer-widget__news-list-item-title">
-                                                        <p>20 Jul, 2021</p>
-                                                        <h5><a href="#">A Clean Water Gives More Good Taste</a></h5>
-                                                    </div>
-                                                </li>
-                                                <li class="footer-widget__news-list-item">
-                                                    <div class="footer-widget__news-list-item-img">
-                                                        <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/200x200.png'; ?>" alt="" />
-                                                    </div>
-                                                    <div class="footer-widget__news-list-item-title">
-                                                        <p>20 Jul, 2021</p>
-                                                        <h5><a href="#">A Clean Water Gives More Good Taste</a></h5>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--End Footer Widget Column-->
-
-                                    <!--Start Footer Widget Column-->
-                                    <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.5s">
+                                    <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
                                         <div class="footer-widget__column footer-widget__explore">
                                             <h2 class="footer-widget__title">Liens utiles</h2>
                                             <ul class="footer-widget__explore-list">
@@ -96,6 +69,22 @@
                                                 <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/blog/">Blog</a></li></li>
                                                 <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/contact/">Contact</a></li>
                                             </ul>
+                                        </div>
+                                    </div>
+                                    <!--End Footer Widget Column-->
+
+                                    <!--Start Footer Widget Column-->
+                                    <div class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
+                                        <div class="footer-widget__column footer-widget__news">
+                                            <h2 class="footer-widget__title">Réseaux sociaux</h2>
+                                            <div class="footer-one__bottom-social-links">
+                                                <ul>
+                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <!--End Footer Widget Column-->
@@ -115,14 +104,6 @@
                             <div class="footer-one__bottom-inner">
                                 <div class="footer-one__bottom-text">
                                     <p>&copy; Cultibaterre Copyright 2023 par <a href="#">Code House</a></p>
-                                </div>
-                                <div class="footer-one__bottom-social-links">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>

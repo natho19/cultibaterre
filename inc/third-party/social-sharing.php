@@ -15,8 +15,8 @@ function cultibaterre_social_sharing($content)
         $title = htmlspecialchars(urlencode(html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8');
 
         // Construct sharing URL without using any script
-        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u=' . $URL;
         $twitterURL = 'https://twitter.com/intent/tweet?text=' . $title . '&amp;url=' . $URL . '&amp;via=' . $site_title;
+        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u=' . $URL;
         $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url=' . $URL . '&amp;title=' . $title;
         // $newlinkedInURL = 'https://www.linkedin.com/sharing/share-offsite/?url=' . $URL;
 
@@ -25,14 +25,14 @@ function cultibaterre_social_sharing($content)
         $content .= '<div class="tag-social-link__social-links">';
         $content .= '<ul>';
 
-        // Facebook
-        $content .= '<li>';
-        $content .= '<a href="' . $facebookURL . '" target="_blank"><i class="fab fa-facebook"></i></a>';
-        $content .= '</li>';
-
         // Twitter
         $content .= '<li class="single_post_share_twitter">';
         $content .= '<a href="' . $twitterURL . '" target="_blank"><i class="fab fa-twitter"></i></a>';
+        $content .= '</li>';
+
+        // Facebook
+        $content .= '<li>';
+        $content .= '<a href="' . $facebookURL . '" target="_blank"><i class="fab fa-facebook"></i></a>';
         $content .= '</li>';
 
         // LinkedIn
