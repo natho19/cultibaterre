@@ -147,157 +147,66 @@
 <?php endif; ?>
 
 <!--Services One -->
-<section class="services-one services-one--has-top-bg">
-    <div class="container">
-        <div class="sec-title text-center">
-            <div class="icon">
-                <img src="<?= CULTIBATERRE_FAVICON_URL; ?>" alt="Icon" />
-            </div>
-            <span class="sec-title__tagline">Ce que nous faisons</span>
-            <h2 class="sec-title__title">Nos Principaux Services</h2>
-        </div>
-        <div class="row">
-            <!--Start Single Services One-->
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
-                data-wow-duration="1000ms">
-                <div class="services-one__single">
-                    <div class="services-one__single-img">
-                        <a href="#">
-                            <div class="services-one__single-img-inner">
-                                <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                            </div>
-                        </a>
-                    </div>
-                    <div class="services-one__single-content text-center">
-                        <h3><a href="service-details.html">Produits biologiques</a></h3>
-                        <p>Saveurs pures, nature authentique : les produits biologiques enchantent les papilles</p>
-                        <a href="service-details.html" class="read-more-btn"><span class="icon-right-arrow-2"></span></a>
-                    </div>
+<?php if (have_rows('services')) : ?>
+    <section class="services-one services-one--has-top-bg">
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="icon">
+                    <img src="<?= CULTIBATERRE_FAVICON_URL; ?>" alt="Icon" />
                 </div>
+                <?php if (get_field('services_tag')) : ?>
+                    <span class="sec-title__tagline"><?php the_field('services_tag'); ?></span>
+                <?php endif; ?>
+                <?php if (get_field('services_title')) : ?>
+                    <h2 class="sec-title__title"><?php the_field('services_title'); ?></h2>
+                <?php endif; ?>
             </div>
-            <!--End Single Services One-->
-
-            <!--Start Single Services One-->
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms"
-                data-wow-duration="1000ms">
-                <div class="services-one__single">
-                    <div class="services-one__single-img">
-                        <div class="services-one__single-img-inner">
-                            <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                        </div>
+            <div class="row">
+                <?php while (have_rows('services')) : the_row(); ?>
+                    <?php $post = get_sub_field('service'); if ($post) : ?>
+                        <?php get_template_part('parts/content', 'service'); ?>
+                    <?php endif; wp_reset_postdata(); ?>
+                <?php endwhile; ?>
+                <?php if (get_field('services_link')) : ?>
+                    <div class="about-three__content-box-btn text-center">
+                        <a href="<?= esc_url(get_field('services_link')['url']); ?>" class="thm-btn"><?= esc_html(get_field('services_link')['title']); ?></a>
                     </div>
-                    <div class="services-one__single-content text-center">
-                        <h3><a href="service-details.html">Fruits frais</a></h3>
-                        <p>Fruits frais, savoureux et éclatants, une nature à déguster joyeusement</p>
-                        <a href="service-details.html" class="read-more-btn"><span class="icon-right-arrow-2"></span></a>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Services One-->
-
-            <!--Start Single Services One-->
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0ms"
-                data-wow-duration="1000ms">
-                <div class="services-one__single">
-                    <div class="services-one__single-img">
-                        <div class="services-one__single-img-inner">
-                            <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                        </div>
-                    </div>
-                    <div class="services-one__single-content text-center">
-                        <h3><a href="service-details.html">Petit élevage</a></h3>
-                        <p>Nos animaux, élevés avec soin, offrent une tendresse viande</p>
-                        <a href="service-details.html" class="read-more-btn"><span class="icon-right-arrow-2"></span></a>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Services One-->
-
-            <div class="about-three__content-box-btn text-center">
-                <a href="http://localhost/cultibaterre/services" class="thm-btn">Tous les services</a>
+                <?php endif; ?>
             </div>
         </div>
-        
-    </div>
-</section>
+    </section>
+<?php endif; ?>
 
 <!--Blog One -->
-<section class="blog-one">
-    <div class="blog-one__bg wow slideInDown" data-wow-delay="100ms" data-wow-duration="2500ms"></div>
-    <div class="container">
-        <div class="sec-title text-center">
-            <div class="icon">
-                <img src="<?= CULTIBATERRE_FAVICON_URL ?>" alt="Favicon">
+<?php if (have_rows('posts')) : ?>
+    <section class="blog-one">
+        <div class="blog-one__bg wow slideInDown" data-wow-delay="100ms" data-wow-duration="2500ms"></div>
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="icon">
+                    <img src="<?= CULTIBATERRE_FAVICON_URL ?>" alt="Favicon">
+                </div>
+                <?php if (get_field('posts_tag')) : ?>
+                    <span class="sec-title__tagline"><?php the_field('posts_tag'); ?></span>
+                <?php endif; ?>
+                <?php if (get_field('posts_title')) : ?>
+                    <h2 class="sec-title__title"><?php the_field('posts_title'); ?></h2>
+                <?php endif; ?>
             </div>
-            <span class="sec-title__tagline">Blog</span>
-            <h2 class="sec-title__title">Articles à la une</h2>
+            <div class="row">
+                <?php while (have_rows('posts')) : the_row(); ?>
+                    <?php $post = get_sub_field('post'); if ($post) : ?>
+                        <?php get_template_part('parts/content', 'post'); ?>
+                    <?php endif; wp_reset_postdata(); ?>
+                <?php endwhile; ?>
+                <?php if (get_field('posts_link')) : ?>
+                    <div class="about-three__content-box-btn text-center">
+                        <a href="<?= esc_url(get_field('posts_link')['url']); ?>" class="thm-btn"><?= esc_html(get_field('posts_link')['title']); ?></a>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
-        <div class="row">
-            <!--Start Single Blog One-->
-            <div class="col-xl-4 col-lg-4  wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                <div class="blog-one__single">
-                    <div class="blog-one__single-img">
-                        <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                        <div class="date-box">
-                            <span>30 July, 2021</span>
-                        </div>
-                        <div class="overlay-icon">
-                            <a href="single-post.html"><span class="icon-plus"></span></a>
-                        </div>
-                    </div>
-
-                    <div class="blog-one__single-content">
-                        <h2><a href="single-post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Blog One-->
-
-            <!--Start Single Blog One-->
-            <div class="col-xl-4 col-lg-4  wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                <div class="blog-one__single">
-                    <div class="blog-one__single-img">
-                        <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                        <div class="date-box">
-                            <span>30 July, 2021</span>
-                        </div>
-                        <div class="overlay-icon">
-                            <a href="single-post.html"><span class="icon-plus"></span></a>
-                        </div>
-                    </div>
-
-                    <div class="blog-one__single-content">
-                        <h2><a href="single-post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Blog One-->
-
-            <!--Start Single Blog One-->
-            <div class="col-xl-4 col-lg-4  wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                <div class="blog-one__single">
-                    <div class="blog-one__single-img">
-                        <img src="<?= CULTIBATERRE_IMG_URL . 'backgrounds/900x600.png'; ?>" alt="900x600" />
-                        <div class="date-box">
-                            <span>30 July, 2021</span>
-                        </div>
-                        <div class="overlay-icon">
-                            <a href="single-post.html"><span class="icon-plus"></span></a>
-                        </div>
-                    </div>
-
-                    <div class="blog-one__single-content">
-                        <h2><a href="single-post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-three__content-box-btn text-center">
-                <a href="http://localhost/cultibaterre/blog/" class="thm-btn">Tous les articles</a>
-            </div>
-            <!--End Single Blog One-->
-        </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
 
 <?php get_footer(); ?>
