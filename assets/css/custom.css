@@ -4120,6 +4120,12 @@ button {
     transition-delay: 0.1s;
 }
 
+.blog-one__single-content .meta-info li {
+    color: var(--agriox-color-1, #687469);
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .blog-one__single-content .meta-info li a:hover {
     color: var(--agriox-base, #b6d549);
 }
@@ -10071,7 +10077,8 @@ Sidebar
         max-width: 370px;
         width: 100%;
     }
-    .blog-one__single-content .meta-info li a {
+    .blog-one__single-content .meta-info li a,
+    .blog-one__single-content .meta-info li {
         font-size: 13px;
     }
     .news-sidebar__blockquote {

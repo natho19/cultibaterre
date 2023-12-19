@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('parts/archive', 'header'); ?>
+<?php get_template_part('parts/header', 'archive'); ?>
 
 <!--Services One Start-->
 <section class="services-one">

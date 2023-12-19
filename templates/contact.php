@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part('parts/page', 'header'); ?>
+<?php get_template_part('parts/header', 'page'); ?>
 
 <!--Start Contact Page-->
 <section class="contact-page">

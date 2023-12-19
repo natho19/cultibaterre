@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part('parts/page', 'header'); ?>
+<?php get_template_part('parts/header', 'page'); ?>
 
 <!--About Three Start-->
 <section class="about-three">

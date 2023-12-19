@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('parts/home', 'header'); ?>
+<?php get_template_part('parts/header', 'home'); ?>
 
 <!--Blog One Start-->
 <section class="blog-one blog-one--news">
