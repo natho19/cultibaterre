@@ -40,9 +40,11 @@
                 <div class="main-header--one__top clearfix">
                     <div class="auto-container">
                         <div class="main-header--one__top-left">
-                            <div class="text">
-                                <p>Coopérative de produits agricoles</p>
-                            </div>
+                            <?php if ($cultibaterre_options['description']) : ?>
+                                <div class="text">
+                                    <p><?= $cultibaterre_options['description']; ?></p>
+                                </div>
+                            <?php endif; ?>
                             <div class="social-link clearfix">
                                 <ul>
                                     <li><a href="<?= esc_url($cultibaterre_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
@@ -101,13 +103,16 @@
                                         </div>
                                     </div>
                                     <div class="main-header--one__bottom-left">
-                                        <ul class="main-menu__list">
-                                            <li><a href="http://localhost/cultibaterre/">Accueil</a></li>
-                                            <li><a href="http://localhost/cultibaterre/a-propos/">A propos</a></li>
-                                            <li><a href="http://localhost/cultibaterre/services">Services</a></li>
-                                            <li><a href="http://localhost/cultibaterre/blog/">Blog</a></li>
-                                            <li><a href="http://localhost/cultibaterre/contact/">Contact</a></li>
-                                        </ul>
+                                        <?php
+                                        wp_nav_menu([
+                                            'theme_location'  => 'main',
+                                            'depth'           => 1,
+                                            'container'       => '',
+                                            'menu_class'      => 'main-menu__list',
+                                            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                                            'walker'          => new WP_Bootstrap_Navwalker(),
+                                        ]);
+                                        ?>
                                     </div>
                                 </div>
                             </nav>

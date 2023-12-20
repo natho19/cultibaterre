@@ -11,7 +11,6 @@ add_action('after_setup_theme', 'cultibaterre_setup');
 
 // Images location
 define('CULTIBATERRE_IMG_URL', get_template_directory_uri() . '/assets/images/', false);
-define('CULTIBATERRE_FAVICON_URL', get_template_directory_uri() . '/assets/images/resources/sec-title-icon1.png', false);
 
 // Disable Gutenberg
 add_filter('use_block_editor_for_post', '__return_false');
@@ -39,3 +38,27 @@ function cultibaterre_search_filter($query) {
 	return $query;
 }
 add_filter('pre_get_posts', 'cultibaterre_search_filter');
+
+// Add menu zones
+function cultibaterre_register_menus() {
+	register_nav_menus([
+		'main' => 'Menu principal',
+		'useful-links' => 'Liens utiles'
+	]);
+}
+add_action('init', 'cultibaterre_register_menus');
+
+// Widget zone areas
+function cultibaterre_register_sidebar() {
+	// Footer widget zone
+	register_sidebar([
+		'id'            => 'footer-useful-links',
+		'name'          => __('Liens utiles'),
+		'description'   => __('Widget pour les liens utiles'),
+		'before_widget' => '<div class="footer-widget__column footer-widget__explore">',
+		'after_widget'  => '</div>',
+        'before_title' => '<h2 class="footer-widget__title">',
+		'after_title'  => '</h2>'
+	]);
+}
+add_action('widgets_init', 'cultibaterre_register_sidebar');

@@ -4721,23 +4721,23 @@ button {
     margin-left: 50px;
 }
 
-.footer-widget__explore-list {
+.footer-widget__explore-list, .footer-widget__explore ul {
     position: relative;
     display: block;
     margin-top: -4px;
 }
 
-.footer-widget__explore-list-item {
+.footer-widget__explore-list-item, .footer-widget__explore ul li {
     position: relative;
     display: block;
     margin-bottom: 10px;
 }
 
-.footer-widget__explore-list-item:last-child {
+.footer-widget__explore-list-item:last-child, .footer-widget__explore ul li:last-child {
     margin-bottom: 0;
 }
 
-.footer-widget__explore-list-item a {
+.footer-widget__explore-list-item a, .footer-widget__explore ul li a {
     position: relative;
     display: inline-block;
     color: #b3c5b5;
@@ -4751,11 +4751,11 @@ button {
     transition-delay: 0.1s;
 }
 
-.footer-widget__explore-list-item a:hover {
+.footer-widget__explore-list-item a:hover, .footer-widget__explore ul li a:hover {
     color: #ffffff;
 }
 
-.footer-widget__explore-list-item a::before {
+.footer-widget__explore-list-item a::before, .footer-widget__explore ul li a::before {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -4770,7 +4770,7 @@ button {
     transition-delay: 0.1s;
 }
 
-.footer-widget__explore-list-item:hover a::before {
+.footer-widget__explore-list-item:hover a::before, .footer-widget__explore ul li:hover a::before {
     width: 100%;
 }
 

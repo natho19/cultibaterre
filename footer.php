@@ -72,16 +72,10 @@
                                     
                                     <!--Start Footer Widget Column-->
                                     <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
-                                        <div class="footer-widget__column footer-widget__explore">
-                                            <h2 class="footer-widget__title">Liens utiles</h2>
-                                            <ul class="footer-widget__explore-list">
-                                                <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/a-propos/">A Propos</a></li>
-                                                <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/services">Nos Services</a></li>
-                                                <li class="footer-widget__explore-list-item"><a href="projects.html">Nos Projets</a></li>
-                                                <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/blog/">Blog</a></li></li>
-                                                <li class="footer-widget__explore-list-item"><a href="http://localhost/cultibaterre/contact/">Contact</a></li>
-                                            </ul>
-                                        </div>
+                                        <!-- Widget useful links -->
+                                        <?php if (is_active_sidebar('footer-useful-links')) : ?>
+                                            <?php dynamic_sidebar('footer-useful-links'); ?>
+                                        <?php endif; ?>
                                     </div>
                                     <!--End Footer Widget Column-->
 
