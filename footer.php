@@ -112,7 +112,7 @@
                         <div class="col-xl-12">
                             <div class="footer-one__bottom-inner">
                                 <div class="footer-one__bottom-text">
-                                    <p>Copyright &copy; <?= date("Y"); ?> Cultibaterre par Code House</p>
+                                    <p>Copyright &copy; <?= date("Y"); ?> CultibaTerre par Code House</p>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +191,6 @@
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow-2"></i></a>
 
     <!-- JS files location -->
-    <!-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script> -->
     <?php wp_footer(); ?>
 </body>
 
