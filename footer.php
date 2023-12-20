@@ -1,29 +1,31 @@
         <?php global $cultibaterre_options; ?>
 
         <!--Cta One -->
-        <section class="cta-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="cta-one__wrapper">
-                            <div class="cta-one__left">
-                                <div class="cta-one__left-icon">
-                                    <span class="icon-farm"></span>
+        <?php if ($cultibaterre_options['call-to-action']) : ?>
+            <section class="cta-one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="cta-one__wrapper">
+                                <div class="cta-one__left">
+                                    <div class="cta-one__left-icon">
+                                        <span class="icon-farm"></span>
+                                    </div>
+                                    <div class="cta-one__left-title">
+                                        <h2><?= $cultibaterre_options['call-to-action']; ?></h2>
+                                    </div>
                                 </div>
-                                <div class="cta-one__left-title">
-                                    <h2>Nous offrons le meilleur dans notre domaine</h2>
-                                </div>
-                            </div>
-                            <div class="cta-one__right">
-                                <div class="cta-one__right-btn">
-                                    <a href="<?= esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="thm-btn">Nous contacter</a>
+                                <div class="cta-one__right">
+                                    <div class="cta-one__right-btn">
+                                        <a href="<?= esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="thm-btn">Nous contacter</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>        
+            </section>
+        <?php endif; ?>
         
         <!--Start Footer One-->
         <footer class="footer-one">
@@ -110,7 +112,7 @@
                         <div class="col-xl-12">
                             <div class="footer-one__bottom-inner">
                                 <div class="footer-one__bottom-text">
-                                    <p>Copyright &copy; 2023 Cultibaterre par Code House</p>
+                                    <p>Copyright &copy; <?= date("Y"); ?> Cultibaterre par Code House</p>
                                 </div>
                             </div>
                         </div>

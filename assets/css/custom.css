@@ -689,9 +689,9 @@ button {
     z-index: -1;
 }
 
-.main-menu .main-menu__list > li.current > a,
+.main-menu .main-menu__list > li.active > a,
 .main-menu .main-menu__list > li:hover > a,
-.stricky-header .main-menu__list > li.current > a,
+.stricky-header .main-menu__list > li.active > a,
 .stricky-header .main-menu__list > li:hover > a {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -699,9 +699,9 @@ button {
     transform-origin: right center;
 }
 
-.main-menu .main-menu__list > li.current > a,
+.main-menu .main-menu__list > li.active > a,
 .main-menu .main-menu__list > li:hover > a,
-.stricky-header .main-menu__list > li.current > a,
+.stricky-header .main-menu__list > li.active > a,
 .stricky-header .main-menu__list > li:hover > a {
     color: var(--agriox-primary, #334b35);
 }
@@ -711,9 +711,9 @@ button {
     padding-right: 0px;
 }
 
-.main-menu .main-menu__list > li.current > a::before,
+.main-menu .main-menu__list > li.active > a::before,
 .main-menu .main-menu__list > li:hover > a::before,
-.stricky-header .main-menu__list > li.current > a::before,
+.stricky-header .main-menu__list > li.active > a::before,
 .stricky-header .main-menu__list > li:hover > a::before {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -7002,7 +7002,7 @@ button {
 }
 
 .services-details__sidebar-single-services ul li a:hover::before,
-.services-details__sidebar-single-services ul li.current a::before {
+.services-details__sidebar-single-services ul li.active a::before {
     opacity: 1;
     -webkit-transform: perspective(400px) rotateX(0deg);
     transform: perspective(400px) rotateX(0deg);
@@ -7012,11 +7012,11 @@ button {
     transition-delay: 0.1s;
 }
 
-.services-details__sidebar-single-services ul li.current:first-child {
+.services-details__sidebar-single-services ul li.active:first-child {
     margin-top: 20px;
 }
 
-.services-details__sidebar-single-services ul li.current:last-child {
+.services-details__sidebar-single-services ul li.active:last-child {
     margin-bottom: 35px;
 }
 
@@ -7025,7 +7025,7 @@ button {
 }
 
 .services-details__sidebar-single-services ul li a:hover i,
-.services-details__sidebar-single-services ul li.current a i {
+.services-details__sidebar-single-services ul li.active a i {
     color: var(--agriox-base, #b6d549);
 }
 
@@ -10869,7 +10869,7 @@ Sidebar
 
 .shop-one__sidebar__category__list li:hover a {
     color: var(--agriox-primary);
-    text-shadow: 0 0 1px currentColor;
+    text-shadow: 0 0 1px activeColor;
 }
 
 .shop-one__sidebar__search {
@@ -11672,7 +11672,7 @@ Sidebar
 .sidebar__categories-list li a:hover,
 .sidebar__categories-list li a.active {
     font-weight: 400;
-    text-shadow: 0 0 1px currentColor;
+    text-shadow: 0 0 1px activeColor;
 }
 
 .comment-one__content-top {

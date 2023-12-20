@@ -12,14 +12,17 @@
                     <!--Start Services Details Sidebar Single-->
                     <div class="services-details__sidebar-single">
                         <div class="services-details__sidebar-single-contact-box text-center wow fadeInUp animated animated animated" data-wow-delay="0.3s" data-wow-duration="1200m">
-                            <div class="icon">
+                            <div class="icon mb-2">
                                 <span class="icon-phone-call-2"></span>
                             </div>
-                            <div class="title">
-                                <h2>Coopérative de produits agricoles</h2>
-                            </div>
-                            <p class="phone"><a href="tel:123456789">666 888 0000</a></p>
-                            <p>Contactez-nous à tout moment</p>
+                            <?php if ($cultibaterre_options['telephone']) : ?>
+                                <p class="phone"><a href="tel:<?= $cultibaterre_options['telephone']; ?>"><?= $cultibaterre_options['telephone']; ?></a></p>
+                            <?php endif; ?>
+                            <?php if ($cultibaterre_options['description']) : ?>
+                                <div class="title">
+                                    <h2><?= $cultibaterre_options['description']; ?></h2>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <!--End Services Details Sidebar Single-->

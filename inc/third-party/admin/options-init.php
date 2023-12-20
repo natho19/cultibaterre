@@ -141,8 +141,13 @@ Redux::setSection( $opt_name, array(
         ],
         [
             'id' => 'description',
-            'type' => 'textarea',
+            'type' => 'text',
             'title' => 'Description'
+        ],
+        [
+            'id' => 'call-to-action',
+            'type' => 'text',
+            'title' => 'Texte du Call to action'
         ]
     ]
 ) );
