@@ -37,7 +37,7 @@ function cultibaterre_custom_post_types() {
         'show_ui' => true,
         'show_in_menu' => true,
         'show_in_admin_bar' => true,
-        'menu_icon' => 'dashicons-palmtree',
+        'menu_icon' => 'dashicons-screenoptions',
         'publicly_queryable' => true,
         'capability_type' => 'post', 
         'query_var' => true

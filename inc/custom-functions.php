@@ -62,3 +62,21 @@ function cultibaterre_register_sidebar() {
 	]);
 }
 add_action('widgets_init', 'cultibaterre_register_sidebar');
+
+// Add active class
+function add_active_nav_class($classes, $item) {
+	if (is_singular('service')) {
+		$classes = str_replace('menu-item-170', 'menu-item-170 active', $classes);
+	}
+	if (is_singular('post')) {
+		$classes = str_replace('menu-item-172', 'menu-item-172 active', $classes);
+	}
+	return $classes;
+}
+add_filter('nav_menu_css_class', 'add_active_nav_class', 10, 2);
+
+function cultibaterre_remove_post_type_support() {
+	remove_post_type_support('page', 'editor');
+	remove_post_type_support('page', 'thumbnail');
+}
+add_action('init', 'cultibaterre_remove_post_type_support', 10);
