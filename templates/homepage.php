@@ -184,7 +184,7 @@
         <div class="container">
             <div class="sec-title text-center">
                 <div class="icon">
-                    <img src="<?= CULTIBATERRE_FAVICON_URL ?>" alt="Favicon">
+                    <img src="<?= $cultibaterre_options['favicon-32']['url']; ?>" alt="Icon" />
                 </div>
                 <?php if (get_field('posts_tag')) : ?>
                     <span class="sec-title__tagline"><?php the_field('posts_tag'); ?></span>

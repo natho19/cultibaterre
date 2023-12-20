@@ -1,5 +1,6 @@
 <!--Page Header Start-->
-<section class="page-header clearfix" style="background-image: url('<?= CULTIBATERRE_IMG_URL . 'backgrounds/1800x400.png'; ?>');">
+<?php global $cultibaterre_options; ?>
+<section class="page-header clearfix" style="background-image: url('<?= $cultibaterre_options['banner']['url']; ?>');">
     <div class="container">
         <div class="page-header__inner text-center clearfix">
             <ul class="thm-breadcrumb">
