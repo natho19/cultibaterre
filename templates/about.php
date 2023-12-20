@@ -14,7 +14,7 @@
                 <div class="about-three__content-box">
                     <div class="sec-title">
                         <div class="icon">
-                            <img src="<?= CULTIBATERRE_FAVICON_URL; ?>" alt="Icon">
+                            <img src="<?= $cultibaterre_options['favicon-32']['url']; ?>" alt="Icon">
                         </div>
                         <?php if (get_field('about_tag')) : ?>
                             <span class="sec-title__tagline"><?php the_field('about_tag'); ?></span>
@@ -113,7 +113,7 @@
                         <div class="testimonials-one__left-bg"></div>
                         <div class="sec-title">
                             <div class="icon">
-                                <img src="<?= CULTIBATERRE_FAVICON_URL; ?>" alt="Icon">
+                                <img src="<?= $cultibaterre_options['favicon-32']['url']; ?>" alt="Icon">
                             </div>
                             <?php if (get_field('testimonial_tag')) : ?>
                                 <span class="sec-title__tagline">Témoignages</span>

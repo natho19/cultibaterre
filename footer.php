@@ -137,7 +137,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="http://localhost/cultibaterre/" aria-label="logo image"><img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-3.png'; ?>" alt="Logo" /></a>
+                <a href="<?= esc_url(get_home_url()); ?>" aria-label="logo image"><img src="<?= $cultibaterre_options['logo-2']['url']; ?>" alt="Logo" /></a>
             </div>
             <!-- /.logo-box -->
 
@@ -145,23 +145,28 @@
             <!-- /.mobile-nav__container -->
 
             <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="icon-phone-call"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@agriox.com</a>
-                </li>
-                <li>
-                    <i class="icon-letter"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
-                </li>
+                <?php if ($cultibaterre_options['email']) : ?>
+                    <li>
+                        <i class="icon-phone-call"></i>
+                        <a href="tel:<?= $cultibaterre_options['telephone']; ?>"><?= $cultibaterre_options['telephone']; ?></a>
+                    </li>
+                <?php endif; ?>
+                <?php if ($cultibaterre_options['telephone']) : ?>
+                    <li>
+                        <i class="icon-letter"></i>
+                        <a href="mailto:<?= $cultibaterre_options['email']; ?>"><?= $cultibaterre_options['email']; ?></a>
+                    </li>
+                <?php endif; ?>
             </ul>
             <!-- /.mobile-nav__contact -->
 
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
-                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="<?= esc_url($cultibaterre_options['twitter']); ?>" class="fab fa-twitter"></a>
+                    <a href="<?= esc_url($cultibaterre_options['facebook']); ?>" class="fab fa-facebook-square"></a>
+                    <a href="<?= esc_url($cultibaterre_options['linkedin']); ?>" class="fab fa-linkedin"></a>
+                    <a href="<?= esc_url($cultibaterre_options['instagram']); ?>" class="fab fa-instagram"></a>
+                    <a href="<?= esc_url($cultibaterre_options['youtube']); ?>" class="fab fa-youtube"></a>
                 </div>
                 <!-- /.mobile-nav__social -->
             </div>

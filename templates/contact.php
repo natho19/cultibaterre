@@ -13,7 +13,7 @@
                 <div class="contact-page__left">
                     <div class="sec-title">
                         <div class="icon">
-                            <img src="<?= CULTIBATERRE_FAVICON_URL; ?>" alt="Icon">
+                            <img src="<?= $cultibaterre_options['favicon-32']['url']; ?>" alt="Icon">
                         </div>
                         <?php if (get_field('contact_tag')) : ?>
                             <span class="sec-title__tagline"><?php the_field('contact_tag'); ?></span>
