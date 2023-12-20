@@ -25,10 +25,11 @@
                     <?php the_field('contact_description'); ?>
                     <div class="contact-page__social-link">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="<?= esc_url($cultibaterre_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="<?= esc_url($cultibaterre_options['facebook']); ?>"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="<?= esc_url($cultibaterre_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="<?= esc_url($cultibaterre_options['instagram']); ?>"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="<?= esc_url($cultibaterre_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,35 +56,41 @@
                 <div class="contact-page__contact-info-wrapper">
                     <div class="contact-page__contact-info-list">
                         <ul>
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-map"></span>
-                                </div>
-                                <div class="title">
-                                    <span>Visit Our Store</span>
-                                    <p>88 broklyn street, New York</p>
-                                </div>
-                            </li>
+                            <?php if ($cultibaterre_options['address']) : ?>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-map"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span>Adresse</span>
+                                        <p><?= $cultibaterre_options['address']; ?></p>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
 
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-email-1"></span>
-                                </div>
-                                <div class="title">
-                                    <span>Send Email</span>
-                                    <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
-                                </div>
-                            </li>
+                            <?php if ($cultibaterre_options['address']) : ?>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-email-1"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span>Email</span>
+                                        <p><a href="mailto:<?= $cultibaterre_options['email']; ?>"><?= $cultibaterre_options['email']; ?></a></p>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
 
-                            <li>
-                                <div class="icon phone">
-                                    <span class="icon-phone-call-2"></span>
-                                </div>
-                                <div class="title">
-                                    <span>Call Anytime</span>
-                                    <p><a href="tel:123456789">666 888 0000</a></p>
-                                </div>
-                            </li>
+                            <?php if ($cultibaterre_options['telephone']) : ?>
+                                <li>
+                                    <div class="icon phone">
+                                        <span class="icon-phone-call-2"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span>Téléphone</span>
+                                        <p><a href="tel:<?= $cultibaterre_options['telephone']; ?>"><?= $cultibaterre_options['telephone']; ?></a></p>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
