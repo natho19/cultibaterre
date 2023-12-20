@@ -16,7 +16,7 @@
                                 <span class="icon-phone-call-2"></span>
                             </div>
                             <div class="title">
-                                <h2>Grossiste de produits agricoles</h2>
+                                <h2>Coopérative de produits agricoles</h2>
                             </div>
                             <p class="phone"><a href="tel:123456789">666 888 0000</a></p>
                             <p>Contactez-nous à tout moment</p>

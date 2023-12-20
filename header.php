@@ -1,3 +1,5 @@
+<?php global $cultibaterre_options; ?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -5,12 +7,18 @@
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= CULTIBATERRE_IMG_URL . 'favicons/apple-touch-icon.png'; ?>" />
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= CULTIBATERRE_IMG_URL . 'favicons/favicon-32x32.png'; ?>" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= CULTIBATERRE_IMG_URL . 'favicons/favicon-16x16.png'; ?>" />
+    <!-- Favicons -->
+    <?php if ($cultibaterre_options['favicon-180']['url']) : ?>
+        <link rel="apple-touch-icon" sizes="180x180" href="<?= esc_url($cultibaterre_options['favicon-180']['url']); ?>" />
+    <?php endif; ?>
+    <?php if ($cultibaterre_options['favicon-32']['url']) : ?>
+        <link rel="icon" type="image/png" sizes="32x32" href="<?= esc_url($cultibaterre_options['favicon-32']['url']); ?>" />
+    <?php endif; ?>
+    <?php if ($cultibaterre_options['favicon-16']['url']) : ?>
+        <link rel="icon" type="image/png" sizes="16x16" href="<?= esc_url($cultibaterre_options['favicon-16']['url']); ?>" />
+    <?php endif; ?>
     
-    <!-- fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
 
@@ -21,7 +29,7 @@
 <body>
     <!-- Preloader -->
     <div class="preloader">
-        <img class="preloader__image" width="60" src="<?= CULTIBATERRE_IMG_URL . 'logos/favicon-1.png'; ?>" alt="Preloader" />
+        <img class="preloader__image" width="60" src="<?= esc_url($cultibaterre_options['favicon-512']['url']); ?>" alt="Preloader" />
     </div>
 
     <div class="page-wrapper">
@@ -33,33 +41,38 @@
                     <div class="auto-container">
                         <div class="main-header--one__top-left">
                             <div class="text">
-                                <p>Grossiste de produits agricoles</p>
+                                <p>Coopérative de produits agricoles</p>
                             </div>
                             <div class="social-link clearfix">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="<?= esc_url($cultibaterre_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="<?= esc_url($cultibaterre_options['facebook']); ?>"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="<?= esc_url($cultibaterre_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="<?= esc_url($cultibaterre_options['instagram']); ?>"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="<?= esc_url($cultibaterre_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="main-header--one__top-right clearfix">
                             <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="mailto:contact@cultibaterre.com">contact@cultibaterre.com</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon"><i class="fa fa-clock"></i></div>
-                                    <div class="text">
-                                        <p>Lun - Sam 24h/24, Dim - 06:00 à 13:00</p>
-                                    </div>
-                                </li>
+                                <?php if ($cultibaterre_options['email']) : ?>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="mailto:<?= $cultibaterre_options['email']; ?>"><?= $cultibaterre_options['email']; ?></a></p>
+                                        </div>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ($cultibaterre_options['hours']) : ?>
+                                    <li>
+                                        <div class="icon"><i class="fa fa-clock"></i></div>
+                                        <div class="text">
+                                            <p><?= $cultibaterre_options['hours']; ?></p>
+                                        </div>
+                                    </li>
+                                <?php endif; ?>
                             </ul>
                         </div>
                     </div>
@@ -71,8 +84,8 @@
                         <div class="main-header--one__bottom-inner">
                             <div class="main-header--one__bottom-middel">
                                 <div class="logo">
-                                    <a href="http://localhost/cultibaterre/">
-                                        <img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-1.png'; ?>" alt="Logo" class="light-logo" />
+                                    <a href="<?= esc_url(get_home_url()); ?>">
+                                        <img src="<?= $cultibaterre_options['logo-1']['url']; ?>" alt="Logo" class="light-logo" />
                                     </a>
                                 </div>
                             </div>
@@ -82,8 +95,8 @@
                                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                     <div class="stricky-one-logo">
                                         <div class="logo">
-                                            <a href="http://localhost/cultibaterre/">
-                                                <img src="<?= CULTIBATERRE_IMG_URL . 'logos/logo-1.png'; ?>" class="dark-logo" alt="Logo" />
+                                            <a href="<?= esc_url(get_home_url()); ?>">
+                                                <img src="<?= $cultibaterre_options['logo-1']['url']; ?>" class="dark-logo" alt="Logo" />
                                             </a>
                                         </div>
                                     </div>
@@ -105,15 +118,17 @@
                                         <span class="icon-magnifying-glass"></span>
                                     </a>
                                 </div>
-                                <div class="contact-box">
-                                    <div class="icon">
-                                        <span class="icon-phone-call-2"></span>
+                                <?php if ($cultibaterre_options['telephone']) : ?>
+                                    <div class="contact-box">
+                                        <div class="icon">
+                                            <span class="icon-phone-call-2"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Centre d'appel</p>
+                                            <a href="tel:<?= $cultibaterre_options['telephone']; ?>"><?= $cultibaterre_options['telephone']; ?></a>
+                                        </div>
                                     </div>
-                                    <div class="text">
-                                        <p>Centre d'appel</p>
-                                        <a href="tel:+22891422196">91 42 21 96</a>
-                                    </div>
-                                </div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>

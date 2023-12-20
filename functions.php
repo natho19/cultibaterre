@@ -6,3 +6,4 @@ require(dirname(__FILE__)) . '/inc/google-api-key.php';
 require(dirname(__FILE__)) . '/inc/post-type.php';
 require(dirname(__FILE__)) . '/inc/third-party/pagination.php';
 require(dirname(__FILE__)) . '/inc/third-party/social-sharing.php';
+require(dirname(__FILE__)) . '/inc/third-party/admin/admin-init.php';

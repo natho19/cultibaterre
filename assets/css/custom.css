@@ -4864,7 +4864,7 @@ button {
     position: relative;
     display: block;
     background: var(--agriox-secondary, #6d8c54);
-    padding: 29px 0px 27px;
+    padding: 18px 0;
 }
 
 .footer-one__bottom-inner {
@@ -4887,7 +4887,7 @@ button {
 
 .footer-one__bottom-text p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
